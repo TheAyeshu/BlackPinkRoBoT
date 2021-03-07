@@ -145,7 +145,7 @@ CMD ["python3","-m","LaylaRobot"]
 RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements to /root/SaitamaRobot
-RUN git clone -b shiken https://github.com/AnimeKaizoku/SaitamaRobot /root/SaitamaRobot
+RUN git clone -b shiken https://github.com/TheAyeshu/BlackPinkRoBoT /root/SaitamaRobot
 WORKDIR /root/SaitamaRobot
 
 #Copy config file to /root/SaitamaRobot/SaitamaRobot
