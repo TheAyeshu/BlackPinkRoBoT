@@ -84,7 +84,7 @@ def _check_member(client, message):
             except UserNotParticipant:
                 try:
                     sent_message = message.reply_text(
-                        "Welcome {} 🙏 \n \n **You are ours @{} Channel Not joined yet** 😭 \n Please do that Join At the bottom **UNMUTE ME** Button Touch it. \n \n **[👉 OUR CHANNEL 👈](https://t.me/{})**".format(
+                        "Welcome {} 😶 \n \n **You are ours @{} Channel Not joined yet** 😤 \n Please do that Join At the bottom **UNMUTE ME** Button Touch it. \n \n **[👉 OUR CHANNEL 👈](https://t.me/{})**".format(
                             message.from_user.mention, channel, channel
                         ),
                         disable_web_page_preview=True,
@@ -135,7 +135,7 @@ def config(client, message):
                         if chat_member.restricted_by.id == (client.get_me()).id:
                             client.unban_chat_member(chat_id, chat_member.user.id)
                             time.sleep(1)
-                    sent_message.edit("✅ **UnMuted all members who are muted by me.**")
+                    sent_message.edit("✅ **UnMuted Successfuly all members who are muted by me.**")
                 except ChatAdminRequired:
                     sent_message.edit(
                         "❗ **I am not an admin in this chat.**\n__I can't unmute members because i am not an admin in this chat make me admin with ban user permission.__"
@@ -187,6 +187,6 @@ Note: Only creator of the group can setup me and i will not allow force subscrib
 • `/ForceSubscribe clear - To unmute all members who muted by me.
 
 Note: /FSub is an alias of /ForceSubscribe
- 
+ Creator: [BOSS](t.me/Its_Ayeshu)
 """
 __mod_name__ = "Subscribe"
